@@ -3,46 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="./index.js" defer></script>
     <title>Addvantage Capital</title>
 </head>
 <body>
     <header>
         <nav>
-            <img id ="logo" src="./assets/images/ADD2 1.png" alt="addvantage logo">
-            <div id="nav-secondhalf">
+            <ul class="sidebar">
+              <li class="close"><span class="icon">close</span></li>
+              <li><a href="./residency.html">Residency & Golden Visa</a></li>
+              <li><a href="./investorTrips.html">Investor Trips</a></li>
+              <li><a href="./properties.html">Properties</a></li>
+              <li><a href="./singlePropery.html">Single Properties</a></li>
+              <li><a href="./faq.html">FAQs</a></li>
+              <li><a href="./aboutFumbaTown.html">About Fumba Town</a></li>
+              <li><a href="./contactUs.html">Contact Us</a></li>
+            </ul>
+            <a href="./"><img id ="logo" src="./assets/images/addvantageCapitalLogoNav.png" alt="addvantage capital logo"></a>
+            <div id="mid-nav">
+                <a href="./residency.html">Residency & Golden Visa</a>
+                <a href="./investorTrips.html">Investor Trips</a>
+                <div id="properties">
+                    <a href="./properties.html">Properties</a>
+                    <img src="./assets/images/dropDownIcon.png" alt="">
+                </div>
+                <a href="./faq.html">FAQs</a>
+                <a href="./aboutFumbaTown.html">About Fumba Town</a>
+            </div>
+            <div id="right-nav">
                 <div id="language-dropdown">
-                    <img src="./assets/images/United Kingdom (GB).png" alt="">
-                    <img id= "dropdown-icon" src="./assets/images/Vector.png" alt="dropdown icon">
+                    <img src="./assets/images/unitedKingdom.png" alt="">
+                    <img id= "dropdown-icon" src="./assets/images/dropDownIcon.png" alt="dropdown icon">
                 </div>
                 <div id="menu">
                     <img src="./assets/images/menu.png" alt="menu icon">
                 </div>
+                <a class="card-cta"href="./contactUs.html">Contact Us</a>
             </div>
         </nav>
+
         <section id="hero-section">
-            <div id="text">
-                <h1 id="main-text">
-                    Discover Fumba Town; Africa’s Leading Sustainable Real Estate Destination
-                </h1>
-                <div id="sub-text">
-                    <div id="marker">
-                    </div>
-                    <div class="subtexts">
-                        <p class="card-title">
-                            As the official global agency for the French-speaking market, we invite you to explore Fumba Town — an award-winning eco-city on the shores of Zanzibar.
-                        </p>
-                        <p>
-                        Join 2,000+ international investors already building their future in one of Africa’s fastest-growing real estate opportunities.
-                        </p>
+            <div id="hero-content">
+                <div id="hero-text">
+                    <h1 id="main-text">
+                        Discover Fumba Town; Africa’s Leading Sustainable Real Estate Destination
+                    </h1>
+                    <div id="sub-text">
+                        <div id="marker">
+                        </div>
+                        <div class="subtexts">
+                            <p>
+                                As the official global agency for the French-speaking market, we invite you to explore Fumba Town — an award-winning eco-city on the shores of Zanzibar.
+                            </p>
+                            <p>
+                                Join 2,000+ international investors already building their future in one of Africa’s fastest-growing real estate opportunities.
+                            </p>
+                        </div>
                     </div>
                 </div>
+                <button>Join an Investor Tour</button>
             </div>
-            <button>Join an Investor Tour</button>
-            <img src="./assets/images/hero image.png" alt="hero image">
+            <img id="mobile-hero-image" src="./assets/images/hero image.png" alt="hero image">
+            <img id="desktop-hero-image" src="./assets/images/desktop-hero-image.png" alt="hero image">
         </section>
     </header>
 
@@ -50,14 +77,14 @@
         <div id="title">
             <div id ="marker1">
             </div>
-            <h2 id="text1">
+            <h2 class="text1 half">
                 Discover Sustainable Living in Zanzibar’s Premier Urban Oasis
             </h2>
         </div>
         <div id="z-texts-container">
             <div class="zanzibar-texts one">
                 <div>
-                    <img src="./assets/images/FILLED_COLOR.png" alt="">
+                    <img src="./assets/images/mapLocationIcon.png" alt="">
                 </div>
                 <p>
                     Sought-after location at a top travel destination worldwide. 15% tourism growth, plus two universities next to the city creates a housing demand. Take advantage of a diverse international community with excellent investment potential 
@@ -65,7 +92,7 @@
             </div>
             <div class="zanzibar-texts two">
                 <div>
-                    <img src="./assets/images/Circular_Glyph.png" alt="">
+                    <img src="./assets/images/circularGlyph.png" alt="">
                 </div>
                 <p>
                     Innovative, Africa-adapted timber construction concept "Volkshaus" combines state-of-the-art construction with permaculture principles inspired by the region's unique ecosystem, designed to create a comfortable and sustainable living environment  
@@ -73,7 +100,7 @@
             </div>
             <div class="zanzibar-texts three">
                 <div>
-                    <img src="./assets/images/Frame 13.png" alt="">
+                    <img src="./assets/images/worldIcon.png" alt="">
                 </div>
                 <p>
                     Innovative, Africa-adapted timber construction concept "Volkshaus" combines state-of-the-art construction with permaculture principles inspired by the region's unique ecosystem, designed to create a comfortable and sustainable living environment  
@@ -83,61 +110,70 @@
     </section>
 
     <section id="video-section">
-        
         <div id="video">
             <div id="video-control">
-                <p id="video-link">Fumba Town Paje - http://f...</p>
+                <p id="video-link">Fumba Town Paje - http://fumbatownagency</p>
                 <div>
                     <img src="./assets/images/Queue.png" alt="">
-                    <img src="./assets/images/ShareFat.png" alt="">
+                    <img src="./assets/images/shareIcon.png" alt="">
                 </div>
             </div>
-            <img id="youtube-button" src="./assets/images/Frame 13 (1).png" alt="youtube play button">
-            <img id="watch" src="./assets/images/Frame 27.png" alt="watch on youtube">
+            <img class="youtube-button myb" src="./assets/images/ytIconMobile.png" alt="youtube play button">
+            <img class="youtube-button dyb" src="./assets/images/ytIcon.png" alt="youtube play button">
+            <img class="watch dw" src="./assets/images/watchOnYt.png" alt="watch on youtube">
+            <img class="watch mw" src="./assets/images/watchOnYtMobile.png" alt="watch on youtube">
         </div>
     </section>
 
     <section id="residency-golden-visa">
-        <div id="residency-texts">
-            <div id="title">
-                <div id ="marker2">
+        <img id="residency-image" src="./assets/images/residency image.png" alt="">
+        <div id="residency-secondHalf">
+            <div id="residency-texts">
+                <div id="title1">
+                    <div id ="marker2">
+                    </div>
+                    <h2 class="text1 resident">
+                        Residency & Golden Visa as a Plan-B
+                    </h2>
                 </div>
-                <h2 id="text1" class="text1">
-                    Residency & Golden Visa as a Plan-B
-                </h2>
+                <div id="sub-text1">
+                    <div>
+                        <p>
+                            Get a Golden Visa for 1–6 family members from €90,000 investment in a house or apartment. As a retiree, you can also buy a small apartment (from €35,000) or rent (from €350) - you receive a Retirement Visa without an investment. Other benefits include:
+                        </p>
+                    </div>
+                    <ul id="sub-sub-text">
+                        <li>Live in a city with neighbours from 60 nations, shops, restaurants, many co-working spaces, its own medical practice, and much more.</li>
+                        <li>Simple student apartments, family apartments, multi-generational houses, penthouses, lofts up to luxury villas with pool and beach</li>
+                        <li>Power backup, Starlink (available soon), excellent connectivity</li>
+                        <li>Direct flights to over 20 countries </li>
+                    </ul>
+                </div>
             </div>
-            <div id="sub-text1" >
-                <div>
-                    <p>
-                        Get a Golden Visa for 1–6 family members from €90,000 investment in a house or apartment. As a retiree, you can also buy a small apartment (from €35,000) or rent (from €350) - you receive a Retirement Visa without an investment. Other benefits include:
-                    </p>
-                </div>
-                <div id="sub-sub-text">
-                    <p>Live in a city with neighbours from 60 nations, shops, restaurants, many co-working spaces, its own medical practice, and much more.</p>
-                    <p>Simple student apartments, family apartments, multi-generational houses, penthouses, lofts up to luxury villas with pool and beach</p>
-                    <p>Power backup, Starlink (available soon), excellent connectivity</p>
-                    <p>Direct flights to over 20 countries </p>
-                </div>
-            </div>
+            <button>See More Information</button>
         </div>
-        <button>See More Information</button>
     </section>
 
-    <section id="featured-opportunities">
-        <div id="title">
-            <div id ="marker1">
+    <section id="featured-opportunities"> 
+        <div id="featured-heading">
+            <div id="title">
+                <div id ="marker1">
+                </div>
+                <h2 class="text1 three-quarter">
+                    Featured Properties/Investment Opportunities
+                </h2>
             </div>
-            <h2 id="text1">
-                Featured Properties/Investment Opportunities
-            </h2>
+            <button>View All Properties</button>
         </div>
         <div id="cards">
-            <article class="card">
-                <img class="card-image" src="./assets/images/093ce8979e394ae898ed01fdac82ac66a0c8a907.png" alt="">
+            <article class="card burj">
+                <img class="card-image" src="./assets/images/burj zanzibar mobile.png" alt="">
                 <div>
                     <div class="card-texts">
                         <p class="card-title">Burj Zanzibar</p>
-                        <p class="card-description">A one-of-a-kind architectural masterpiece rising 27 stories, featuring private pools, rooftop garden apartments, and premium shared amenities for a luxury living experience.</p>
+                        <p class="card-description">
+                            A one-of-a-kind architectural masterpiece rising 27 stories, featuring private pools, rooftop garden apartments, and premium shared amenities for a luxury living experience.
+                        </p>
                     </div>
                     <hr>
                     <div class="property-cta">
@@ -145,9 +181,10 @@
                         <button class="card-cta">View Property</button>
                     </div>
                 </div>
-            </div>
-            <article class="card">
-                <img class="card-image" src="./assets/images/95a56d5d9dc6ccaa2dfc188d3f61fa18ae39186d.png" alt="">
+                <img id="burj-desktop" src="./assets/images/burj zanzibar image.jpg" alt="">
+            </article>
+            <article class="card visasi-mobile">
+                <img class="card-image" src="./assets/images/vizazi oasis mobile.png" alt="">
                 <div>
                     <div class="card-texts">
                         <p class="card-title">Vizazi–Oasis</p>
@@ -159,9 +196,9 @@
                         <button class="card-cta">View Property</button>
                     </div>
                 </div>
-            </div>
-            <article class="card">
-                <img class="card-image" src="./assets/images/0388a0914d8d5b28531f8ce49b757d5cc0522d02.png" alt="">
+            </article>
+            <article class="card soul-fumba">
+                <img class="card-image" src="./assets/images/soul fumba.png" alt="">
                 <div>
                     <div class="card-texts">
                         <p class="card-title">The Soul Fumba</p>
@@ -173,17 +210,75 @@
                         <button class="card-cta">View Property</button>
                     </div>
                 </div>
-            </div>
+            </article>
         </div>
-        <button>View All Properties</button>
+        <button id="f-button">View All Properties</button>
+        <div id="desktop-cards">
+            <article class="cardd">
+                <img src="./assets/images/bustani villa.png" alt="">
+                <div>
+                    <div class="card-texts">
+                        <p class="card-title">Bustani Villa</p>
+                        <p class="card-description">A one-of-a-kind architectural masterpiece rising 27 stories, featuring private pools, rooftop garden apartments, and premium shared amenities for a luxury living experience.</p>
+                    </div>
+                    <hr>
+                    <div class="property-cta">
+                        <p class="pricing">Starting from $84,875</p>
+                        <button class="card-cta">View Property</button>
+                    </div>
+                </div>
+            </article>
+            <article class="cardd">
+                <img src="./assets/images/vizazi oasis.png" alt="">
+                <div>
+                    <div class="card-texts">
+                        <p class="card-title">Vizazi–Oasis</p>
+                        <p class="card-description">Modern timber crafted homes with flexible floor plans that can be customised to fit your home and office needs, located in the heart of Fumba Town or right by the sea.</p>
+                    </div>
+                    <hr>
+                    <div class="property-cta">
+                        <p class="pricing">Starting from $193,900</p>
+                        <button class="card-cta">View Property</button>
+                    </div>
+                </div>
+            </article>
+            <article class="cardd">
+                <img src="./assets/images/mwagani-skyloft.png" alt="">
+                <div>
+                    <div class="card-texts">
+                        <p class="card-title">Mwangani SkyLoft</p>
+                        <p class="card-description">Stunning ocean views, sustainable elegance and luxurious timber architecture designed for a uniquely comfortable living environment.</p>
+                    </div>
+                    <hr>
+                    <div class="property-cta">
+                        <p class="pricing">Starting from $179,880 for 69sqm</p>
+                        <button class="card-cta">View Property</button>
+                    </div>
+                </div>
+            </article>
+            <article class="cardd">
+                <img src="./assets/images/soul page.png" alt="">
+                <div>
+                    <div class="card-texts">
+                        <p class="card-title">Soul Paje Apartments</p>
+                        <p class="card-description">Full-service residences with a tropical garden and lagoon pool for a resort-like experience or a perfect rental. Timber construction offers a comfortable indoor climate.</p>
+                    </div>
+                    <hr>
+                    <div class="property-cta">
+                        <p class="pricing">Starting from $84,875</p>
+                        <button class="card-cta">View Property</button>
+                    </div>
+                </div>
+            </article>
+        </div>
     </section>
     
     <section id="location-section">
         <div id="location-text">
-            <div id="title">
-                <div id ="marker1">
+            <div id="title1">
+                <div id ="marker2">
                 </div>
-                <h2 id="text1">
+                <h2 class="text1">
                     Where is Fumba Town located?
                 </h2>
             </div>
@@ -194,6 +289,16 @@
                 <p>Fumba Town</p>
                 <p>View larger map</p>
             </div>
+            <div id="map-title-desktop">
+                <div>
+                    <div id="inner-map-title">
+                        <p>Fumba Town</p>
+                        <p id="fumba-location">Fumba Town, Main Entrance Zanzibar, Unnamed Road, Mchamba Wima 3564, Tanzania</p>
+                    </div>
+                    <p>View larger map</p>
+                </div>
+                <img src="./assets/images/map share.png" alt="">
+            </div>
             <div id="zoom">
                 <img src="./assets/images/Plus.png" alt="zoom in">
                 <hr>
@@ -201,8 +306,110 @@
             </div>
         </div>
     </section>
-    <section id="faq">
 
+    <section id="faq">
+        <div>
+            <h2 class="text1 faq-title">
+                Frequently Asked Questions
+            </h2>
+            <article id="questions">
+                <div id="question--1">
+                    <div id="--question">
+                        <p>How many people can obtain the Golden Visa?</p>
+                        <img src="./assets/images/minus1.png" alt="">
+                    </div>
+                    <p id="--answer">
+                        The Golden Visa can be obtained for up to 6 people. Typically, this includes the parents and up to 4 financially dependent children under the age of 18.  Eligibility for the visa remains valid as long as the house or apartment is owned. The visa in the passport must be renewed every 2 years and costs US$500 for the main applicant and US$50 for each additional person.
+                    </p>
+                </div>
+                <hr>
+                <div class="question">
+                    <p>What are the costs for rental and guest/tenant management through Valor?</p>
+                    <img src="./assets/images/Plus1.png" alt="">
+                </div>
+                <hr>
+                <div class="question">
+                    <p>What are the additional costs? </p>
+                    <img src="./assets/images/Plus1.png" alt="">
+                </div>
+                <hr>
+                <div class="question">
+                    <p>Is the power grid reliable?</p>
+                    <img src="./assets/images/Plus1.png" alt="">
+                </div>
+                <hr>
+                <div class="question">
+                    <p>I have further questions or would like to see the city.</p>
+                    <img src="./assets/images/Plus1.png" alt="">
+                </div>
+                <hr>
+                <div class="question">
+                    <p>What are the entry requirements for Zanzibar?</p>
+                    <img src="./assets/images/Plus1.png" alt="">
+                </div>
+            </article>
+        </div>
     </section>
+
+    <section id="experience-wrapper">
+        <div id="experience">
+            <div>
+                <div id="experience-text">
+                    <p class="text1" id="text1">
+                        Experience Zanzibar's Urban Development
+                    </p>
+                    <p id="experience-subtext">
+                        Every 3 months, we host workshops where you can visit and see Fumba Town for yourself. Place your expression of interest or book your consultation appointment now.
+                    </p>
+                </div>
+                <button>
+                    Get More Information
+                </button>
+            </div>
+            <img  id="african-man" src="./assets/images/AfricanMan.png" alt="">
+        </div>
+    </section>
+
+    <footer>
+        <div id="footer-info">
+            <div id="footer-links">
+                <a href="">Join an Investor Tour</a>
+                <a href="">Permaculture</a>
+                <a href="">Become an agency partner</a>
+                <a href="">FAQs about Fumba Town and Zanzibar</a>
+            </div>
+            <div id="footer-logo">
+                <img src="./assets/images/addvantageCapitalLogoFooter.png" alt="addvantage capital logo">
+                <div id="footer-texts">
+                    <p class="footer-main-text">
+                        Fumba Town
+                    </p>
+                    <p id="footer-sub-text">
+                        Invest in modern, eco-friendly homes and enjoy a vibrant multicultural community.
+                    </p>
+                </div>
+            </div>
+            <div id="helpful-links">
+                <p class="footer-main-text">Helpful links</p>
+                <a id="footer-links"href="">FumbaTown Directory</a>
+            </div>
+            <div id="socials-and-contact">
+                <p class="footer-main-text">Fumba Town Agency Worldwide</p>
+                <p class="footer-text">Greenshield Consulting LLC</p>
+                <p class="footer-text">office@fumbatown.agency</p>
+                <p class="footer-text">+1 307 288 5687 </p>
+                <div id="socials">
+                    <img src="./assets/images/linkedInIcon.png" alt="">
+                     <img src="./assets/images/igIcon.png" alt="">
+                     <img src="./assets/images/xLogo.png" alt="">
+                </div>
+            </div>
+        </div>
+        <hr id="footer-rule">
+        <div id="copyright">
+            <img src="./assets/images/copyright.png" alt="">
+            <p>Copyright 2025. All rights reserved</p>
+        </div>
+    </footer>
 </body>
 </html>

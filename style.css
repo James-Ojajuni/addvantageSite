@@ -3,15 +3,26 @@
     padding: 0;
     box-sizing: border-box;
     font-family: lato;
-
-}
-
-body {
-    padding: 1.5rem 0;
 }
 
 header {
-    padding: 0 1.25rem;
+    padding: 1.5rem 1.25rem 0 1.25rem;
+}
+
+#zanzibar-section, 
+#video-section, 
+#featured-opportunities, 
+#location-section, #faq, 
+#experience, 
+#bento-grid-section, 
+#cps-africa,
+#upcoming-trips,
+#FAQs {
+    padding: 2.5rem 1.25rem;
+}
+
+li {
+    list-style: none;
 }
 
 nav {
@@ -23,14 +34,79 @@ nav {
     padding: 0.5rem;
     border-radius: 100rem;
     box-shadow: 0 4px 8px #d7d7d7;
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
-#nav-secondhalf {
+#mid-nav {
+    display: none;
+    gap: 1rem;
+}
+
+#properties {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#mid-nav > * {
+    padding: 0.5rem;
+}
+
+#cps-africa > div {
+    background-color: #fff3eb;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 4rem 2.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#cps-africa-logo {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.cps-africa-text {
+    max-width: 39.75rem;
+}
+
+nav .card-cta {
+    display: none;
+}
+
+.zt-heading {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #212027;
+    line-height: 150%;
+    letter-spacing: 0;
+}
+
+.zt-subheading {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #383843;
+    line-height: 150%;
+    letter-spacing: 0;
+}
+
+#mid-nav  a {
+    text-decoration: none;
+    color: #67667a;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+#right-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
-    padding-inline-end: 0.4575rem;
+    
 }
 
 #language-dropdown {
@@ -47,14 +123,26 @@ nav {
 
 #menu {
     height: 1.5rem;
-    width: 1.5rem;
+    width: 1.9575rem;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    /* margin: 0.5rem; */
 }
 
-#hero-section {
+#singleProp-hero-mainText {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 39.5rem;
+}
+
+#hero-section,
+#hero-sectionz,
+#singleProp-hero-section,
+#aboutFumbaHeroSection,
+#investorTripsHeroSection,
+#faqHeroSection,
+#contactUsHeroSection {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -62,23 +150,50 @@ nav {
     padding: 2.5rem 0;
 }
 
-#text {
+#hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#hero-text {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
-#main-text {
+#residency-hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+#main-text,
+#main-text1 {
     font-weight: 700;
     font-size: 2rem;
     line-height: 120%;
     letter-spacing: -2.5%;
+    color: #001505;
 }
 
 #sub-text {
     display: flex;
-    justify-content: space-between;
     gap: .75rem;
+    height: auto;
+    align-self: flex-end;
+}
+
+#sub-text2 {
+    display: flex;
+    gap: .75rem;
+    height: auto;
+}
+
+#residency-sub-text {
+    display: flex;
+    gap: .75rem;
+    height: auto;
 }
 
 #marker {
@@ -87,12 +202,40 @@ nav {
     border-radius: 100rem;
 }
 
+#residency-marker {
+    width: .25rem;
+    background-color: #f45d01;
+    border-radius: 100rem;
+}
+
+#aboutFumbaMarker {
+    width: 5rem;
+    background-color: #f45d01;
+    border-radius: 100rem;
+    flex-basis: .2rem;
+}
+
 .subtexts {
     font-size: 0.875rem;
     font-weight: 400;
     display: flex;
     flex-direction: column;
     gap: 1.125rem;
+    color: #67667a;
+    line-height: 150%;
+    letter-spacing: 1%;
+}
+
+.spht {
+    justify-content: space-between;
+}
+
+.subtexts1 {
+    font-size: 0.875rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
     color: #67667a;
     line-height: 150%;
     letter-spacing: 1%;
@@ -112,13 +255,17 @@ button {
     background-color: #f45d01;
     border-radius: 100rem;
     color: white;
+    flex-shrink: 0;
+}
+
+#desktop-hero-image {
+    display: none;
 }
 
 #zanzibar-section {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    padding: 2.5rem 1.25rem;
 }
 
 #title {
@@ -127,19 +274,47 @@ button {
     gap: 0.75rem;
 }
 
+#title1 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+#title3 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex-shrink: 0;
+}
+
 #marker1 {
     flex-basis: 0.25rem;
     background-color: #33cc33;
     width: 4rem;
     border-radius: 100rem;
-
 }
 
-#text1 {
+#marker4 {
+    flex-basis: 0.25rem;
+    background-color: #33cc33;
+    width: 4rem;
+    border-radius: 100rem;
+}
+
+.text1 {
     font-weight: 700;
     line-height: 130%;
     letter-spacing: 0%;
     font-size: 1.5rem;
+}
+
+h2.resident {
+    width: 100%;
+}
+
+#z-texts-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .zanzibar-texts {
@@ -150,9 +325,28 @@ button {
     font-weight: 400;
     line-height: 150%;
     letter-spacing: 0%;
+    flex-grow: 1;
 }
 
-.zanzibar-texts > div {
+#featured-desktop-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    column-gap: 1.5rem;
+}
+
+#featured-desktop-cards img {
+    width: 100%;
+}
+
+#faqHeroText {
+    display: flex; 
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 33.75rem;
+}
+
+.zanzibar-texts > div:first-of-type {
     display: flex;
     width: 4rem;
     height: 4rem;
@@ -161,20 +355,58 @@ button {
     border-radius: 100rem;
 }
 
+.zanzibar-texts > div:last-of-type {
+    display: flex;
+    flex-direction: column;
+}
+
+#list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#list-title {
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 150%;
+}
+
 .one {
     background-color: #def7f5;
     color: #383843;
 }
 
-.one > div {
+.one > div:first-of-type {
     background-color: white;
 }
 
 .two {
-    background-image: linear-gradient(rgb(0,0,0,0.5)),url("./assets/images/da22d0f733e03efe9cd75fa138d0073d9f6aff9d.png");
+    background-image: linear-gradient(rgb(0,0,0,0.5)),url("./assets/images/constructionImage.png");
     background-size: cover;
     background-position: center;
     color: white;
+}
+
+.zanzibar-texts-container {
+    gap: .5rem;
+}
+
+#grannies {
+    display: none;
+}
+
+.zt {
+    text-align: center;
+    align-items: center;
+}
+
+.onez {
+    background-color: #def7de;
+}
+
+.twoz {
+    background-color: #def7f5;
 }
 
 .three {
@@ -187,7 +419,7 @@ button {
 }
 
 #video {
-    background-image: linear-gradient(rgb(0,0,0,0.5)), url("./assets/images/a914b6eb1f94efe0f8b4ef272871e0568a004d85.png");
+    background-image: linear-gradient(rgb(0,0,0,0.5)), url("./assets/images/ytVideoImage.png");
     background-size: cover;
     background-position: center;
     height: 10rem;
@@ -209,25 +441,72 @@ button {
     gap: 1rem;
 }
 
-#youtube-button {
+.myb {
     position: absolute;
     inset-block-start: 50%;
     inset-inline-start: 50%;
     transform: translate(-50%,-50%);
 }
 
-#watch {
+#residency-hero-subtext {
+    max-width: 700px;
+}
+
+.dyb {
+    display: none;
+}
+
+.mw {
     position: absolute;
     inset-block-end: 0.5rem;
     inset-inline-start: 0.5rem;
 }
 
-#residency-golden-visa {
+.dw {
+    display: none;
+}
+
+#list-title {
+    transform: translateY();
+}
+
+#residency-golden-visa,
+#live-smart {
+    display: flex;
+}
+
+#residency-image {
+    display: none;
+}
+
+#residency-secondHalf {
+    background-color: #001505;
+    padding: 2.5rem 1.25rem;
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
-    background-color: #001505;
-    padding: 2.5rem 1.25rem;
+}
+
+ #live-smart-firstHalf {
+    background-color: #fff3eb;
+    padding: 4rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+#upcomingTripsSecondHalf {
+    background-color: #EAFAEA;
+    padding: 4rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+#live-smart-heroText {
+    display: flex;
+    flex-direction: column;
+    gap: 1.125rem;
 }
 
 #residency-texts {
@@ -235,6 +514,35 @@ button {
     flex-direction: column;
     gap: 1.5rem;
     color: white;
+}
+
+#retirement-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: #212027;
+}
+
+#fff-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: #212027;
+}
+
+#retirementVisa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.center { 
+    text-align: center;
+}
+
+.grey {
+    color:#67667a;
 }
 
 #marker2 {
@@ -261,15 +569,29 @@ button {
     gap: 1rem;
 }
 
-.text1 {
+#text1 {
     color: white; 
+}
+
+#retirementVisa-firstHalf,
+#flexibleFloorPlans-firstHalf {
+    background-color: #fff;
+    padding: 2.5rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
 }
 
 #featured-opportunities {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    padding: 2.5rem 1.25rem;
+}
+
+#featured-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #cards {
@@ -323,6 +645,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .pricing {
@@ -339,6 +662,11 @@ button {
     font-size: 0.75rem;
     letter-spacing: 1%;
     line-height: 150%;
+    flex-shrink: 0;
+    text-decoration: none;
+    color: white;
+    border-radius: 100rem;
+    font-weight: 700;
 }
 
 #location-text {
@@ -351,14 +679,13 @@ button {
     display: flex; 
     flex-direction: column;
     gap: 1.5rem;
-    padding: 2.5rem 1.25rem;
 }
 
 #map {
     position: relative;
     width: 100%;
     height: 13.125rem;
-    background-image: linear-gradient(rgba(0,0,0,0.1)), url(./assets/images/2c661096c9894c694342b229ddd51ecb3ecb2107.png);
+    background-image: linear-gradient(rgba(0,0,0,0.1)), url(./assets/images/map-image.png);
     background-size: cover;
     background-position: 30% 32%;
 }
@@ -373,6 +700,10 @@ button {
     inset-inline-start: 0.4375rem;
     padding: 0.5rem;
     gap: 0.25rem;
+}
+
+#map-title-desktop {
+    display: none;
 }
 
 #map-title > p:first-of-type {
@@ -403,4 +734,1202 @@ button {
     gap: 1rem;
     inset-block-end: 1rem;
     inset-inline-end: 1rem;
+}
+
+#faq > div{
+    display: flex; 
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#faq {
+    display: flex;
+    justify-content: center;
+ }
+
+.faq-title {
+    text-align: center;
+}
+
+#questions {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#question--1 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#--answer {
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 150%;
+    letter-spacing: 1%;
+    color: #67667a;
+}
+
+.question, #--question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question > p, #--question p {
+    width: 20.125rem;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0;
+    color: #212027;
+}
+
+#experience {
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#experience > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    
+}
+
+#experience-text {
+    display: flex; 
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#experience-subtext {
+    color: white;
+    line-height: 150%;
+    font-weight: 400;
+    font-size: 0.875rem;
+    letter-spacing: 1%;
+}
+
+#african-man {
+    display: none;
+}
+
+footer {
+    display: flex;
+    padding: 4rem 1.25rem 0.5rem 1.25rem;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-block-start: 0.5rem;
+    line-height: 150%;
+    font-weight: 400;
+    font-size: 0.875rem;
+    letter-spacing: 1%;
+    
+}
+
+#socials {
+    display: flex;
+    gap: 1rem;
+}
+
+#formTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#footer-links a {
+    color: #67667a;
+}
+
+#footer-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 16.4375rem;
+}
+
+#helpful-links, #footer-rule {
+    display: none;
+}
+
+#footer-logo img {
+    width: max-content;
+}
+
+#footer-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.footer-main-text {
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0;
+    color: #212027;
+}
+
+#footer-sub-text {
+    line-height: 120%;
+    font-weight: 400;
+    font-size: 0.875rem;
+    letter-spacing: 1%;
+    color: #67667a;
+}
+
+#burj-desktop {
+    display: none;
+}
+
+#featured-heading button {
+    display: none;
+}
+
+#socials-and-contact {
+    display: flex;
+    flex-direction: column;
+    padding-block-start: 0.5rem;
+    gap: 0.5rem
+}
+
+#inner-grid {
+    display: grid;
+    grid-template-columns: 1fr 2.712fr;
+    gap: 1rem;
+}
+
+#bento-grid-section {
+    display: none;
+}
+
+#bento-grid-section div {
+    gap: 1rem;
+    height: 100%;
+    width: 100%;
+}
+
+#bento-grid-section img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.75rem;
+    border: 0.5px #D7D7D7 solid;
+}
+
+[src*="Elba"], 
+[src*="WorkersMural"],
+[src*="mural"],
+[src*="office"] {
+    height: 279px !important;
+}
+
+#one-one {
+    display: grid;
+    grid-template-rows: 480px 212px 440px;
+}
+
+#one-two {
+    display: grid;
+    grid-template-rows: 279px 279px 577px;
+}
+
+#one-two-one {
+    display: grid;
+    grid-template-columns: 1.66fr 1fr;
+}
+
+#one-two-two {
+    display: grid;
+    grid-template-columns: 1fr 1.40118fr ;
+}
+
+.footer-text, #copyright {
+    line-height: 150%;
+    font-weight: 400;
+    font-size: 0.875rem;
+    letter-spacing: 1%;
+    color: #67667a;
+} title3
+
+#socials {
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem 0;
+}
+.cardd > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+#copyright {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#desktop-cards {
+    display: none;
+}
+
+.zt > div:last-of-type {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+#desktop-cards article {
+    width: 100%;
+}
+
+#desktop-cards img {
+    width: 100%;
+    
+}
+
+#singlePropHeroImageAndPropertyProperties {
+    display: flex;
+}
+
+#singlePropHeroImageAndPropertyProperties > img { 
+    flex: 1;
+}
+
+.propertiesRow {
+    display: flex;
+    gap: 1rem;
+    padding: 0 0 1rem 0;
+    border-block-end: 1px solid white;
+}
+
+.propertiesRow hr {
+    border: none;
+    width : 0.3px;
+    background-color: white;
+}
+
+#propertyProperties {
+    background-color: #f5f5f5;
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.propertiesRow > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: 7.375rem;
+}
+
+.propertiesRow p {
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: #383843;
+}
+
+#download-brochure {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#fumbaHero {
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#investorHero {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+#aboutFumbaHeroText {
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 130%;
+    color: #001505;
+}
+
+form {
+    box-shadow: 0 4px 8px #d7d7d7;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0 25px;
+    height: 35px;
+}
+
+li:hover {
+    cursor: pointer;
+    background-color: #d9d9d9;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.icon {
+    font-family: "Material Symbols Outlined";
+    font-size: 22px; 
+}
+
+.menu {
+    display: none;
+}
+
+.sidebar {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    z-index: 999;
+    width: 60%;
+    position: fixed;
+    inset-inline-end: 0;
+    inset-block-start: 0;
+    background-color: rgba(255, 255, 255, 0.603);
+    backdrop-filter: blur(5px);
+    height: 100vh;
+    justify-content: flex-start;
+}
+
+.sidebar > li { 
+    height: auto;
+    padding: 15px;
+}
+
+@media (max-width: 490px){
+    .hide {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sidebar {
+        display: none;
+    }
+}
+
+@media (max-width: 350px){
+    .sidebar {
+        display: none;
+        width: 100%;
+    }
+}
+
+#actualForm {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+#actualForm > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+input, textarea {
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    border: 0.7px solid #D3D2DA;
+}
+
+.assistance {
+    display: flex; 
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.assistanceOptions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+form button {
+    width: 100%;
+}
+
+#formMainText {
+    font-size: 1.5rem;
+    color: #212027;
+    line-height: 130%;
+    font-weight: 700;
+}
+
+form img {
+    height: 14.5625rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2.5rem 1.5rem;
+}
+
+#contactUsHeader {
+    background-color: #fbfefb;
+}
+
+#investorHeroText {
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 130%;
+    color: #fff;
+}
+
+#investorTripsHeader {
+    background-image: url('./assets/images/investorTripsHeroImage.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.investorHeroDescription {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 150%;
+    letter-spacing: 0;
+}
+
+#investorTripsButton {
+    font-size: 1rem;
+}
+
+#upcoming-trips {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#upcoming-trips h2 {
+    line-height: 130%;
+}
+
+#upcomingTripsTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+#upcomingTripsTitle div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    color: #212027;
+    line-height: 150%;
+}
+
+.upcoming-trips-article {
+    display: flex;
+}
+
+#upcoming-trips-image-container {
+    flex: 1;
+    display: none;
+    padding: 3.53125rem 0;
+}
+
+#upcoming-trips-image {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.card-cta1 {
+    background: transparent;
+    padding: .5rem 1rem;
+    font-size: 0.75rem;
+    letter-spacing: 1%;
+    line-height: 150%;
+    border: 1px solid #67667A;
+    color: #67667A;
+    flex-shrink: 0;
+}
+
+#live-smart-firstHalf,
+#upcomingTripsSecondHalf {
+    width: 100%;
+}
+
+#faqHeader {
+    background-color: #ffe6d6;
+}
+
+#faqHeroSection {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.QsNAs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 45.6875rem;
+}
+
+.qna {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.faqQuestion {
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 150%;
+    color: #212027;
+}
+
+.faqAnswer,
+.contactUsSubText {
+    font-size: 0.875rem;
+    color: #67667A;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.contactUsMainText {
+    font-weight: 500;
+    color: #001505;
+    font-size: 0.875rem;
+}
+
+#contactUsHeroText {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#contactUsHeroText > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.answerContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.faqDate {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.faqTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.faqMainText {
+    color: #001505;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 130%;
+    width: max-content;
+}
+
+.faqLink {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+#FAQs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#contactUsHeroSection {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+form img {
+    width: 100%;
+}
+
+.faqBold {
+    font-weight: 700;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.grey-background {
+    background-color: #f5f5f5;
+}
+
+.faqList {
+    padding-inline-start: 1.5rem;
+}
+
+.faqList li {
+    list-style-image: none;
+    list-style-type: disc;
+}
+
+@media (min-width: 950px) {
+
+    header {
+        padding: 2.6875rem 9rem 3.6875rem 9rem;
+    }
+
+    #live-smart-firstHalf,
+    #upcomingTripsSecondHalf {
+        width: 50%;
+    }
+
+    #faqHeader {
+        padding-block-end: 2.5rem;
+    }
+
+    #singlePropHeader {
+        padding-block-end: 2.5rem;
+    }
+
+    #aboutFumbaHeroText,
+    #investorHeroText {
+        font-size: 1.5rem;
+    }
+
+    #marker1 {
+        height: 70px;
+        align-self: center;
+    }
+
+    #featured-desktop-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 2rem;
+        column-gap: 1.5rem;
+    }
+
+    #upcoming-trips {
+        gap: 4rem;
+    }
+
+    #fumbaHero, 
+    #investorHero {
+        width: 65%;
+    }
+
+    #contactUsHeroSection {
+        padding-block-start: 5.75rem;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 5rem;
+    }
+
+    #contactUsHeroSection > * {
+        flex: 1;
+    }
+
+    #aboutFumbaHeroSection > div {
+        display: flex;
+        gap: 7.5rem;
+        flex-direction: row;
+    }
+
+    form > div {
+        padding: 4rem 2.5rem;
+    }
+
+    #burj-desktop {
+        display: inline;
+    }
+
+    #upcoming-trips-image-container {
+        display: block;
+    }
+
+    .faqTitle {
+        max-width: 13rem;
+    }
+
+    #desktop-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+        column-gap: 1.5rem;
+    }
+
+    #efp {
+        display: block;
+    }
+
+    #title3 {
+        align-self: center;
+    }
+
+    #zanzibar-section, 
+    footer,
+    #retirementVisa,
+    #bento-grid-section,
+    #cps-africa {
+        padding: 4rem 9rem;
+    }
+
+    #video-section,
+    #faq {
+        padding: 4rem 9rem 5rem 9rem;
+    }
+
+    #featured-opportunities,
+    #location-section,
+    #live-smart,
+    #upcoming-trips,
+    #FAQs {
+        padding: 5rem 9rem;
+    }
+
+    #video {
+        height: 24rem;
+        padding: 1.5rem 2.5rem;
+    }
+
+    nav .card-cta {
+        display: flex;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #hero-section {
+        flex-direction: column;
+        gap: 3.125rem;
+        margin-block-start: 0;
+        padding: 5rem 0 0 0;    
+    }
+
+    #investorTripsHeader {
+        background-position: 0 4%;
+    }
+
+    #hero-sectionz {
+        flex-direction: column;
+        gap: 3.125rem;
+        margin-block-start: 0;
+        padding: 3.4375rem 0 0 0;    
+    }
+
+    #singleProp-hero-section {
+        flex-direction: column;
+        gap: 2.5rem;
+        margin-block-start: 0;
+        padding: 4.8125rem 0 0 0; 
+    }
+
+    #aboutFumbaHeroSection {
+        flex-direction: column;
+        padding: 4.8125rem 0 0 0;
+        gap: 5rem;
+        margin-block-start: 0;
+    }
+
+    #investorTripsHeroSection {
+        display: flex;
+        flex-direction: row;
+        padding: 4.8125rem 0 0 0;
+        gap: 7.5rem;
+        margin-block-start: 0;
+    }
+
+    #FAQs {
+        display: flex;
+        flex-direction: row;
+        gap: 7.5rem;
+        margin-block-start: 0;
+    }
+
+    #faqHeroSection {
+        padding: 4.8125rem 0 0 0;
+    }
+
+    #hero-text {
+        flex-direction: row;
+        gap: 2.5rem;
+    }
+
+    .half {
+        width: 60%;
+    }
+
+    .three-quarter {
+        width: 75%;
+    }
+
+    #main-text {
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 120%;
+        letter-spacing: -2.5%;
+        flex: 1.5;
+    }
+
+    #experience-wrapper {
+        padding-block-start: 4rem;
+    }
+
+    #main-text1 {
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 120%;
+        letter-spacing: -2.5%;
+    }
+
+    #mobile-hero-image {
+        display: none;
+    }
+
+    #desktop-hero-image {
+        display: block;
+        height: 26rem;
+        object-fit: cover;
+    }
+
+    #hero-content {
+        gap: 1.5rem;
+    }
+
+    #sub-text {
+        display: flex;
+        flex: 1;
+    }
+
+    #sub-text2 {
+        flex-direction: row;
+        align-self: flex-end;
+    }
+
+    #z-texts-container {
+        flex-direction: row;
+    }
+
+    #title {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    #featured-opportunities {
+        gap: 4rem;
+    }
+
+    #cards {
+        gap: 4rem;
+    }
+
+    .card-image {
+        display: none;
+    }
+
+    #location-section {
+        gap: 4rem;
+    }
+
+    #map {
+        height: 435px;
+    }
+
+    .burj {
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .burj img {
+        width: 100%;
+        height: 484px;
+        object-fit: cover;
+        object-position: center 85%;
+        
+    }
+
+    .burj > div {
+        width: 558px;
+        gap: 0.75rem;
+        padding: 0 2.5rem;
+        align-items: flex-start;
+        justify-content: center;
+        background: #effbef;
+    }
+
+    .cardd {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #desktop-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 4rem;
+        column-gap: 1.5rem;
+    }
+
+    #grannies {
+        display: inline;
+    }
+
+    #desktop-cards img {
+        width: 100%;
+    }
+
+    #featured-heading button {
+        display: block;
+    }
+
+    .pricing {
+        font-weight: 500;
+        color: black;
+    }
+
+    #flexibleFloorPlans-firstHalf {
+        padding: 0;
+    }
+
+    #f-button {
+        display: none;
+    }
+
+    .visasi-mobile, .soul-fumba {
+        display: none;
+    }
+
+    .text1 {
+        font-weight: 700;
+        line-height: 130%;
+        letter-spacing: 0%;
+        font-size: 2.5rem;
+    }
+
+    #map-title {
+        display: none;
+    }
+
+    #map-title-desktop {
+        display: flex;
+        position: absolute;
+        inset-inline-start: 1.5rem;
+        inset-block-start: 1.5rem;
+        background-color: white;
+        padding: 1rem;
+        gap: 1.5rem;
+        align-items: flex-start;
+    }
+
+    #map-title-desktop p:first-of-type {
+        font-weight: 700;
+        color: #212027;
+        line-height: 120%;
+        letter-spacing: -2.5%;
+        font-size: 1rem;
+    }
+
+    #map-title-desktop > div {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #inner-map-title {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    #map-title-desktop > div > p:last-of-type{
+        font-weight: 500;
+        line-height: 150%;
+        letter-spacing: 1%;
+        font-size: 0.5rem;
+        color: #2563E9;
+    }
+
+    #fumba-location {
+        font-size: 0.75rem;
+        width: 257px;
+        color: #67667a;
+        line-height: 120%;
+    }
+
+    #faq > div {
+        width: 75%;
+    }
+
+    #experience > div {
+        width: 38.875rem;
+    }
+
+    #african-man {
+        display: inline-block;
+        position: absolute;
+        inset-block-end: 0;
+        inset-inline-end: 0rem;
+        width: 850px;
+        height: auto;
+    }
+
+    #zoom {
+        inset-block-end: 2.5rem;
+        inset-inline-end: 2rem;
+    }
+
+    #footer-info {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #copyright {
+        justify-content: center;
+    }
+
+    #footer-links {
+        color: #67667a;
+    }
+
+    #helpful-links, #footer-rule {
+        display: block;
+    }
+
+    
+    #residency-marker {
+        flex-basis: .2rem;
+    }    
+
+    footer {
+        gap: 2.5rem;
+    }
+
+    #footer-logo {
+        order: -1;
+    }
+
+    ul {
+        padding-inline-start: 1rem;
+    }
+
+    li {
+        list-style-image: url(./assets/images/Rectangle\ 4617.png);
+    }
+
+
+    #zanzibar-section {
+        gap: 4rem;
+    }
+
+    .zanzibar-texts {
+        padding: 3.5rem;
+        gap: 2.5rem;
+    }
+
+    #experience {
+        padding: 5rem 9rem;
+        flex-direction: row;
+    }
+
+
+    .myb {
+        display: none;
+    }
+
+    .mw {
+        display: none;
+    }
+
+    .dw {
+        display: block;
+        position: absolute;
+        inset-block-end: 2.5rem;
+        inset-inline-end: 2.5rem;
+    }
+
+    .dyb {
+        display: block;
+        position: absolute;
+        inset-block-start: 50%;
+        inset-inline-start: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    #residency-golden-visa {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    #residency-image {
+        display: inline-block;
+        width: 50%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    #residency-secondHalf {
+        padding: 3.3125rem 9rem 3.3125rem 4rem;
+    }
+
+    #bento-grid-section {
+        display: block;
+    }
+
+}
+
+@media (min-width: 1240px) {
+    #mid-nav {
+        display: flex;
+    }
 }
